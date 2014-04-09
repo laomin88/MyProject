@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ScalePhone</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_fixed_position">固定指示器</string>
+    <string name="summary_fixed_position">是否固定指示器位置, 勾选则固定</string>
+    <string name="category_title_indicator">指示器设置</string>
+    <string name="category_title_operation_area">操作区设置</string>
+    <string name="title_operation_window_setting">设置操作窗口</string>
+    <string name="summary_operation_window_setting">设置操作窗口</string>
+    <string name="title_activity_operation_window_setting">操作区设置</string>
+    <string name="title_activity_operation_window">操作窗口</string>
+    <string name="cb_fixed_scale">固定宽高比例</string>
+    <string name="reset">重置</string>
+    <string name="category_title_function_area">功能设定</string>
+    <string name="single_click">单击</string>
+    <string name="double_click">双击</string>
+    <string name="long_press">长按</string>
+    <string name="title_indicator_size">指示器大小</string>
+    <string name="using_sensor_mode_notification_title">正在使用传感器模式</string>
+    <string name="using_sensor_mode_notification_placeholder_text">点击停止</string>
+    <string name="action_shutdown_sensor">停止</string>
+    <string name="action_setting_sensor">设置</string>
+    <string name="category_title_sensor_setting">传感器功能设置</string>
+    <string name="title_activity_app_sensor_setting">应用设置</string>
+    <string name="title_wait">正在加载中</string>
+    <string name="content_wait">正在加载中,请稍后...</string>
+    <string name="title_app_turn_page_direction_setting">应用翻页方向设置</string>
+    <string name="category_title_base">基本设置</string>
+    <string name="title_auto_boot">开机启动</string>
+    <string name="title_exit">点击退出</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="category_title_exit">退出</string>
+
+</resources>

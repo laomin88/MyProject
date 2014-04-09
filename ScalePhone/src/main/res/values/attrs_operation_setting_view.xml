@@ -1,0 +1,10 @@
+<resources>
+    <declare-styleable name="OperationSettingView">
+        <attr name="scaleWindowBorderColor" format="color" />
+        <attr name="backgroundDrawable" format="color|reference" />
+        <attr name="scaleWidth" format="integer" />
+        <attr name="scaleHeight" format="integer" />
+        <attr name="coverDrawable" format="color|reference"/>
+        <attr name="coverAlpha" format="integer"/>
+    </declare-styleable>
+</resources>

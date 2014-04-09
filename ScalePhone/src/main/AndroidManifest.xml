@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.charmenli.scalephone" >
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.hardware.sensor.accelerometer" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:name="com.charmenli.scalephone.BaseApp"
+        android:allowBackup="true"
+        android:icon="@drawable/indicator"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.charmenli.scalephone.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.charmenli.scalephone.activity.OperationWindowSettingActivity"
+            android:label="@string/title_activity_operation_window_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.charmenli.scalephone.activity.OperationWindowActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_operation_window"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" >
+        </activity>
+
+        <service
+            android:name="com.charmenli.scalephone.service.CoreService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name="com.charmenli.scalephone.receiver.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.charmenli.scalephone.receiver.SensorModeReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.charmenli.scalephone.actions.stop_using_sensors" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.charmenli.scalephone.activity.AppSensorSettingActivity"
+            android:label="@string/title_activity_app_sensor_setting" >
+        </activity>
+
+        <receiver
+            android:name="com.charmenli.scalephone.receiver.ScreenEventReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="indicator_size">
+        <item>超小</item>
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+        <item>超大</item>
+    </string-array>
+    <string-array name="indicator_size_values">
+        <item>0.5</item>
+        <item>0.75</item>
+        <item>1.0</item>
+        <item>1.25</item>
+        <item>1.5</item>
+    </string-array>
+    <string-array name="function_entries">
+        <item>缩放操作</item>
+        <item>应用设置</item>
+        <item>传感器模式</item>
+        <item>截屏</item>
+        <item>锁屏</item>
+    </string-array>
+    <string-array name="function_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="turn_page_direction_entries">
+        <item>左右</item>
+        <item>上下</item>
+    </string-array>
+    <string-array name="turn_page_direction_entry_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+
+</resources>

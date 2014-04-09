@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/category_title_indicator">
+        <CheckBoxPreference
+            android:title="@string/title_fixed_position"
+            android:defaultValue="true"
+            android:summary="@string/summary_fixed_position"
+            android:key="pref_fixed_position" />
+        <com.charmenli.scalephone.preference.ImageListPreference
+            android:title="@string/title_indicator_size"
+            android:summary=""
+            android:entries="@array/indicator_size"
+            android:entryValues="@array/indicator_size_values"
+            android:key="pref_indicator_size"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/category_title_operation_area">
+        <Preference
+            android:title="@string/title_operation_window_setting"
+            android:summary="@string/summary_operation_window_setting"
+            android:key="pref_operation_window_setting">
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/category_title_function_area">
+        <ListPreference
+            android:title="@string/single_click"
+            android:entries="@array/function_entries"
+            android:entryValues="@array/function_entry_values"
+            android:defaultValue="0"
+            android:key="pref_function_single_click">
+        </ListPreference>
+        <ListPreference
+            android:title="@string/double_click"
+            android:entries="@array/function_entries"
+            android:entryValues="@array/function_entry_values"
+            android:defaultValue="1"
+            android:key="pref_function_double_click">
+        </ListPreference>
+        <ListPreference
+            android:title="@string/long_press"
+            android:entries="@array/function_entries"
+            android:entryValues="@array/function_entry_values"
+            android:defaultValue="2"
+            android:key="pref_function_long_press">
+        </ListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/category_title_sensor_setting">
+        <Preference
+            android:title="@string/title_activity_app_sensor_setting"
+            android:key="pref_app_sensor_setting">
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/category_title_base">
+        <CheckBoxPreference
+            android:title="@string/title_auto_boot"
+            android:defaultValue="true"
+            android:key="pref_auto_boot" />
+        <com.charmenli.scalephone.preference.ExitDialogPreference
+            android:title="@string/title_exit"
+            android:dialogTitle="@string/title_exit"
+            android:positiveButtonText="@string/ok"
+            android:negativeButtonText="@string/cancel"
+            android:key="pref_exit">
+        </com.charmenli.scalephone.preference.ExitDialogPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_indicator"
+        android:layout_width="@dimen/indicator_image_width"
+        android:layout_height="@dimen/indicator_image_height"
+        android:layout_centerVertical="true"
+        android:src="@drawable/indicator"
+        android:scaleType="center"/>
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_indicator"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:text="大(150%)"/>
+    <CheckedTextView
+        android:id="@+id/ctb_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?android:attr/textColorAlertDialogListItem"
+        android:gravity="center_vertical"
+        android:paddingStart="12dip"
+        android:paddingEnd="7dip"
+        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+        android:ellipsize="marquee"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        />
+
+</RelativeLayout>

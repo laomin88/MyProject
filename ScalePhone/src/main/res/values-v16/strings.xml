@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="using_sensor_mode_notification_title">正在使用传感器模式</string>
+    <string name="using_sensor_mode_notification_placeholder_text">点击停止</string>
+</resources>

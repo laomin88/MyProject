@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.charmenli.scalephone.activity.OperationWindowSettingActivity">
+
+    <CheckBox
+        android:id="@+id/cb_fixed_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:checked="true"
+        android:enabled="true"
+        android:visibility="visible"
+        android:text="@string/cb_fixed_scale" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_toRightOf="@+id/cb_fixed_scale"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/btn_reset"
+        android:layout_alignBaseline="@+id/cb_fixed_scale"
+        android:onClick="onResetClick"/>
+
+    <SeekBar
+        android:id="@+id/seekBar_width"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="39dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="50dp"
+        android:max="100"
+        android:progress="75" />
+    <TextView
+        android:id="@+id/tv_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75%"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/seekBar_width"/>
+
+    <FrameLayout
+        android:id="@+id/content_window"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/seekBar_width"
+        android:layout_below="@+id/cb_fixed_scale"
+        android:layout_marginLeft="5dp">
+
+        <com.charmenli.scalephone.view.DynamicWidthImageView
+            android:id="@+id/iv_background"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/screen"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/iv_conver"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:alpha="0.25"/>
+        <ImageView
+            android:id="@+id/iv_scale_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/screen"
+            android:scaleType="fitXY"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <com.charmenli.scalephone.view.VerticalSeekBar
+        android:id="@+id/seekBar_height"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/seekBar_width"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:max="100"
+        android:progress="75"
+        android:visibility="invisible"/>
+</RelativeLayout>
