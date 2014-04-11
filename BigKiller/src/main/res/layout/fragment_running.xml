@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.charmen.bigkiller.MainActivity$PlaceholderFragment">
+
+    <LinearLayout
+        android:id="@+id/select_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/select_except_white_list_btn"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/select_except_white_list"/>
+        <Button
+            android:id="@+id/select_all_btn"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/select_all"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/kill_process_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/kill_process"
+        android:layout_alignParentBottom="true"/>
+
+    <ListView
+        android:layout_below="@+id/select_operation"
+        android:layout_above="@+id/kill_process_btn"
+        android:id="@+id/section_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

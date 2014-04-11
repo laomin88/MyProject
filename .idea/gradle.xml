@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="E:\android\MyProject" />
+            <option value="E:\android\MyProject\BigKiller" />
             <option value="E:\android\MyProject\ScalePhone" />
             <option value="E:\android\MyProject\xUtils" />
           </set>
